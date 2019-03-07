@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Message
+\* ------------------------------------------------------------ */
+
+.message { position: relative; padding: 10px 0; }
+.message span { display: inline-block; width: 26px; height: 26px; display: inline-block; border-radius: 50%; border: 1px solid #fff; text-align: center; font-size: 20px; vertical-align: middle; line-height: 1; margin-right: 16px; position: absolute; top: 50%; left: 0; transform: translateY(-50%); padding-top: 1px; }
+.message h6 { font-weight: 600; margin: 0; position: relative; padding-left: 45px }
+.message h6 a { text-decoration: none; color: #f8ba38; }
+
+.message .ico-check-white { margin: 4px 0 0; }
+.message .ico-x { margin: 6px 0 0; }
+
+.message .message__btn { position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
+.message .message__btn i { width: 16px; height: 16px;  }
+.message .message__btn i:after,
+.message .message__btn i:before { background: #fff; }

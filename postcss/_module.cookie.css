@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Cookie
+\* ------------------------------------------------------------ */
+
+.cookie { position: relative; padding: 10px 0; display: none; }
+.cookie span { position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: inline-block; width: 26px; height: 26px; display: inline-block; border-radius: 50%; border: 1px solid #fff; text-align: center; font-size: 20px; vertical-align: middle; line-height: 1; margin-right: 16px; padding-top: 1px; }
+.cookie h6 { font-weight: 600; margin: 0; padding-left: 45px; position: relative; }
+.cookie h6 a { text-decoration: none; color: #f8ba38; }
+
+.cookie .cookie__btn { position: absolute; top: 50%; right: -2px; transform: translateY(-50%); }
+.cookie .cookie__btn i { width: 16px; height: 16px; margin-top: 6px; }
+.cookie .cookie__btn i:after,
+.cookie .cookie__btn i:before { background: #fff; }
+
+
+$breakpoint-tablet-portrait {
+	.cookie h6 { padding-right: 100px; }	
+}
+
+$breakpoint-mobile {
+	.cookie h6 { padding-right: 20px; }	
+}

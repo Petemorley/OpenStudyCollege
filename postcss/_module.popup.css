@@ -1,0 +1,162 @@
+/* ------------------------------------------------------------ *\
+	Popup
+\* ------------------------------------------------------------ */
+
+.popup { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 100; padding-top: 54px; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s; }
+
+.popup .btn-close { position: absolute; top: 58px; right: 50%; margin-right: -541px; transition: opacity .4s; z-index: 10; opacity: 0; transition: opacity .4s .7s;  }
+.popup .btn-close:hover { opacity: .7; }
+
+.popup .bg-animation { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg);  width: 200%; height: 200vh; width: 2900px; height: 2100px; }
+.popup .bg-animation:after,
+.popup .bg-animation:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 50%; background: #17b19f; transition: transform 1.2s; }
+
+.popup .bg-animation:after { transform: translateX(-100%); }
+.popup .bg-animation:before { top: auto; bottom: 0; transform: translateX(100%); margin-bottom: 1px; }
+
+/*.popup .tabs { position: relative; z-index: 10; opacity: 0; transition: transform 4s, opacity .4s .7s !important; }*/
+.popup .accordion { position: relative; z-index: 10; opacity: 0; }
+
+.popup .nav-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: translateY(-100%); opacity: 0; visibility: hidden; transition: opacity .4s .4s, visibility .4s .4s, background .4s; }
+
+.popup .nav-bg.animate-nav-bg  { background: #17b19f !important; }
+
+
+.popup .nav-backgrounds { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity .4s .4s, visibility .4s .4s; display: none; }
+.popup .nav-backgrounds li { opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; }
+.popup .nav-backgrounds li.active { opacity: 1; visibility: visible; }
+
+.popup.visible-popup { opacity: 1; visibility: visible; }
+.popup.visible-popup .btn-close { opacity: 1; }
+/*.popup.visible-popup .tabs { opacity: 1; }*/
+.popup.visible-popup .accordion { opacity: 1; }
+.popup.visible-popup .bg-animation:after,
+.popup.visible-popup .bg-animation:before { transform: translateX(0); }
+
+.popup.visible-popup .nav-backgrounds { transform: translateY(0); opacity: 1; visibility: visible; }
+.popup.visible-popup .nav-bg { transform: translateY(0); opacity: 1; visibility: visible; }
+
+.popup.visible-popup .accordion  { transition: transform 4s, opacity .4s .7s; }
+
+
+
+
+.popup.visible-popup .tabs .tab  { display: block; position: absolute; top: -9999px; opacity: 0; visibility: hidden; transition: opacity .6s, visibility .6s;  }
+.popup.visible-popup .tabs .tab.active { position: static; top: 0; opacity: 1; visibility: visible; }
+
+.popup .btn-close .ico-x:after,
+.popup .btn-close .ico-x:before { background: #fff; }
+
+
+.popup-container { position: fixed; top: 0; left: 0; width: 100%; height: 100vh;  background: #fff; z-index: 100; }
+
+/*  Popup Mobile  */
+.popup--menu { padding: 0; height: 100vh;  }
+.popup--menu .popup__inner { min-height: 100vh; padding-top: 54px; padding: 0; }
+.popup--menu .mCustomScrollBox .mCSB_container { margin: 0; }
+.popup--menu .mCustomScrollBox .mCSB_scrollTools { opacity: 0 !important; }
+.popup--menu .footer { display: none; }
+
+.popup--menu .tabs { min-height: 100vh; padding: 50px 0 100px;  }
+
+
+
+$breakpoint-small-desktop {
+	.popup .btn-close { margin: 0; right: 20px; z-index: 20; }	
+	
+	.popup .bg-animation  { margin: -312px 0 0 -212px; }
+	
+	.popup--menu .popup__inner { margin-bottom: 8px; }
+	.popup--menu .footer { display: block; margin-bottom: 50px; }
+}
+
+$breakpoint-tablet-portrait {
+	.popup .btn-close { display: none; }	
+	.popup .tabs { padding: 38px 0; transition: transform 4s, opacity .4s .9s !important; }	
+
+	.popup .bg-animation { margin: -416px 0 0 -185px; height: 2928px; top: 29%; }
+	.popup.visible-popup .bg-animation  { top: 50%; transition: top 0s .5s;  }
+}
+
+
+$breakpoint-mobile {
+	.popup { width: 100vw; }
+	/*.popup--menu { background: #17b19f; }*/
+	.popup--menu.visible-popup { background: #17b19f; transition: opacity .4s, visibility .4s, background .4s 1.5s; }
+	.popup--menu .footer { margin-bottom: 0; }
+	.popup--menu .popup__inner { margin-bottom: 0; }
+	.popup--menu .tabs { padding: 0; margin-top: 0; }	
+	
+	/*.popup--menu .bg-animation { display: none; }	*/
+	.popup--menu .bg-animation { top: 0 !important; margin: 50vh 0 0; height: 160vh; }	
+
+
+}
+
+
+/* ------------------------------------------------------------ *\
+	Popup Search
+\* ------------------------------------------------------------ */
+
+.popup-search { padding: 0; overflow-y: auto; }
+.popup-search .section-search { position: relative; z-index: 10; opacity: 0; transition: opacity .4s; }
+.popup-search .popup__inner { min-height: 100vh; }
+.popup-search .header { opacity: 0; transition: opacity .4s .5s; }
+
+.popup-search .bg-animation-container { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; }
+
+.popup-search .bg-animation:after { background: #fff; }
+.popup-search .bg-animation:before { background: #fff; }
+
+.popup-search .mCustomScrollBox .mCSB_container { margin: 0; }
+.popup-search .mCustomScrollBox .mCSB_scrollTools { opacity: 0 !important; }
+
+.popup-search.visible-popup { background: #fff; transition: background .4s .9s;  }
+.popup-search.visible-popup .section-search { opacity: 1; transition: opacity .4s .8s; }
+.popup-search.visible-popup .header__inner { box-shadow: none; }
+.popup-search.visible-popup .header { opacity: 1; }
+
+$breakpoint-tablet-portrait {
+	.popup-search .header__inner { padding-top: 30px;  }	
+	.popup-search .popup__inner { width: 100vw; }	
+}
+
+$breakpoint-mobile {
+	.popup-search .header { display: none; }	
+}
+
+
+
+
+/* ------------------------------------------------------------ *\
+	Popup Lang
+\* ------------------------------------------------------------ */
+
+.popup-lang { padding: 0; overflow-y: auto; }
+.popup-lang .header { opacity: 0; transition: opacity .4s .5s; }
+
+.popup-lang .section-lang { position: relative; z-index: 10; opacity: 0; transition: opacity .4s; }
+
+.popup-lang .bg-animation-container { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; }
+
+.popup-lang .bg-animation:after { background: #fff; }
+.popup-lang .bg-animation:before { background: #fff; }
+
+.popup-lang .mCustomScrollBox .mCSB_container { margin: 0; }
+.popup-lang .mCustomScrollBox .mCSB_scrollTools { opacity: 0 !important; }
+
+.popup-lang.visible-popup { background: #fff; transition: background .4s .9s;  }
+.popup-lang.visible-popup .section-lang { opacity: 1; transition: opacity .4s .8s; }
+.popup-lang.visible-popup .header__inner { box-shadow: none; }
+.popup-lang.visible-popup .header { opacity: 1; }
+
+$breakpoint-tablet-portrait {
+	.popup-lang .header__inner { padding-top: 30px; width: 100vw; }	
+}
+
+$breakpoint-mobile {
+	.popup-lang { z-index: 9999;  }	
+	.popup-lang .footer { display: none; }	
+	.popup-lang .header { display: none; }	
+	
+}

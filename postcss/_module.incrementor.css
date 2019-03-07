@@ -1,0 +1,12 @@
+/* ------------------------------------------------------------ *\
+	Incrementor
+\* ------------------------------------------------------------ */
+
+.incrementor { position: relative; }
+
+.incrementor .minus,
+.incrementor .plus { display: inline-block; width: 0; height: 0; border-style: solid; border-width: 0 7.5px 7px 7.5px; border-color: transparent transparent #17b19f transparent; position: absolute; right: 10px; top: 10px; transition: border-color .4s; }
+.incrementor .minus { border-width: 7px 7.5px 0 7.5px; border-color: #17b19f transparent transparent transparent; top: auto; bottom: 10px; transition: border-color .4s; }
+
+.incrementor .plus:hover { border-color: transparent transparent #ed2275 transparent; }
+.incrementor .minus:hover { border-color: #ed2275 transparent transparent transparent; }

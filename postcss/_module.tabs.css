@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	tabs
+\* ------------------------------------------------------------ */
+
+.tabs .tabs__nav { text-align: center; margin: 65px 0 0; font-size: 16px; }
+.tabs .tabs__nav a { text-decoration: none; display: inline-block; font-weight: 600; color: #17b19f; transition: background .4s, color .4s; text-transform: uppercase; min-width: 156px; padding: 7px 5px; border-radius: 20px; position: relative; z-index: 5; }
+
+.tabs .tabs__nav ul { overflow: hidden; display: inline-block; border: 2px solid #fff; background: #fff; border-radius: 20px; }
+.tabs .tabs__nav li { display: inline-block; border-radius: 20px; position: relative; }
+
+.tabs .tabs__nav li:after { content: attr(data-text); position: absolute; top: 0; width: 100%; height: 100%; background: #ed2275; transition: width .4s; border-radius: 20px; font-family: 'Archer', sans-serif; font-weight: 600; color: #fff; text-transform: uppercase; padding-top: 7px; z-index: 6; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s, left .4s, right .4s; }
+
+
+.tabs .tabs__nav .left:after { left: 100%; }
+.tabs .tabs__nav .right:after { right: 100%; }
+
+.tabs .tabs__nav .active.left:after { left: 0; opacity: 1; visibility: visible; }
+.tabs .tabs__nav .active.right:after { right: 0; opacity: 1; visibility: visible; }
+
+
+.tabs .tabs__head { position: absolute; bottom: 50px; left: 0; text-align: center; width: 100%; max-height: 89px; }
+
+
+.tabs .nav-secondary { position: relative; left: -16px; }
+.tabs .list-brands { padding-top: 7px; }
+
+.tabs .tab { display: none; }
+.tabs .tab.active { display: block; }
+
+
+$breakpoint-tablet-portrait {
+	.tabs { position: relative; margin-top: -14px; padding-top: 114px; }
+	.tabs .tabs__head { display: none; position: absolute; top: 54px; bottom: auto; }
+	.tabs .tabs__nav { margin: 0; }	
+	.tabs .nav-secondary { left: 0; }
+}
+
+$breakpoint-mobile {
+	.tabs { padding-top: 129px; }	
+	.tabs .tabs__head { top: 54px; }	
+	.tabs .tabs__nav a { min-width: 153px; }	
+}

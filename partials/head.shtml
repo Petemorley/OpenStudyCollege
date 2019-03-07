@@ -1,0 +1,47 @@
+<head>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Open Study College website</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="/css/images/favicon.ico" />
+
+	<link rel="icon" type="image/png" href="/css/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/css/images/favicon-16x16.png" sizes="16x16" />
+
+	<!-- Vendor Styles -->
+	<link rel="stylesheet" href="/vendor/slick/slick.css">
+
+	<link rel="stylesheet" href="/vendor/magnific-popup.css" />
+	
+	<link rel="stylesheet" href="/vendor/jQuery-autoComplete-master/jquery.auto-complete.css" type="text/css" />
+
+	<link rel="stylesheet" href="/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css"/>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- App Styles -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<!-- <link rel="stylesheet" href="/css/style-new.css" /> -->
+
+	<!-- Vendor JS -->
+	<script src="/vendor/jquery-1.12.4.min.js"></script>
+	
+	<script src="/vendor/slick/slick.min.js"></script>
+	
+	<script src="/vendor/magnific-popup.js"></script>
+	
+	<script src="/vendor/jquery-scrollLock.min.js"></script>
+	
+	<script src="/vendor/jQuery-autoComplete-master/jquery.auto-complete.js" type="text/javascript"></script>
+	
+	<script src="/vendor/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="/vendor/jquery.mousewheel.min.js"></script>
+	
+	<script src="/vendor/validator.js"></script>
+
+	<!-- App JS -->
+	<script src="/js/functions.js"></script>
+</head>

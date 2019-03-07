@@ -1,0 +1,131 @@
+		<footer class="footer">
+			<div class="shell">
+				<div class="footer__inner">
+					<div class="footer__body">
+						<div class="socials">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="ico-facebook"></i> <span>Facebook</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="ico-twitter"></i> <span>Twitter</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="ico-youtube"></i> <span>YouTube</span>
+									</a>
+								</li>
+							</ul>
+						</div><!-- /.socials -->
+
+						<nav class="footer__nav">
+							<ul>
+								<li>
+									<a href="#">Terms & Conditions</a>
+								</li>
+								
+								<li>
+									<a href="#">Privacy Policy</a>
+								</li>
+								
+								<li>
+									<a href="#">Cookies</a>
+								</li>
+								
+								<li>
+									<a href="#">GDPR Example</a>
+								</li>
+							</ul>
+						</nav><!-- /.nav -->
+
+						<nav class="footer__nav">
+							<ul>
+								<li>
+									<a href="#">Our Blog</a>
+								</li>
+								
+								<li>
+									<a href="#">Tutors</a>
+								</li>
+								
+								<li>
+									<a href="#">How It Works</a>
+								</li>
+								
+								<li>
+									<a href="#">Sitemap</a>
+								</li>
+							</ul>
+						</nav><!-- /.footer__nav -->
+					</div><!-- /.footer__body -->
+
+					<div class="footer__aside">
+						<ul class="list-logos">
+							<li>
+								<a href="#">
+									<i class="logo-harry"></i>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<i class="logo-trustpilot logo-trustpilot--small"></i>
+								</a>
+							</li>
+						</ul><!-- /.list-logos -->
+
+						<p>All content ©2018 Open Study College</p>
+					</div><!-- /.footer__aside -->
+				</div><!-- /.footer__inner -->
+			</div><!-- /.shell -->
+		</footer><!-- /.footer -->
+
+		<div class="widget-chat">
+			<div class="widget__body">
+				<ul class="widget__users">
+					<li>
+						<a href="#">
+							<img src="/css/images/temp/user1.jpg" alt="" />
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="/css/images/temp/user2.jpg" alt="" />
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="/css/images/temp/user3.jpg" alt="" />
+						</a>
+					</li>
+				</ul><!-- /.widget__users -->
+
+				<p>
+					<span>
+						Can we help you? <br>
+						Chat live to an adviser
+					</span>
+
+					We will typically respond <br>
+					within 2 minutes
+				</p>
+				
+			</div><!-- /.widget__body -->
+
+			<a href="#" class="widget__btn">
+				<i class="ico-message"></i>
+			</a>
+		</div><!-- /.widget-chat -->
+	</div><!-- /.wrapper -->
+
+	<script src="vendor/anm.min.js"></script>
+</body>
+</html>

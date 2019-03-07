@@ -1,0 +1,10 @@
+/* ------------------------------------------------------------ *\
+	Result
+\* ------------------------------------------------------------ */
+
+.results .results__title { text-transform: uppercase; font-weight: 600; color: #ef4689; margin-bottom: 74px; }
+.results { display: none; }
+
+$breakpoint-mobile {
+	.results .results__title { max-width: 160px; margin-bottom: 35px; }
+}

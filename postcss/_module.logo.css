@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo { display: inline-block; background:  url(../css/images/logo.svg) no-repeat 0 0; width: 218px; height: 22px; background-size: 100% 100%;   }
+
+.logo-trustpilot { display: inline-block; background:  url(../css/images/logo-trustpilot.png) no-repeat 0 0; width: 133px; height: 78px; background-size: 100% 100%;   }
+.logo-trustpilot--small { width: 100px; height: 54px; }
+
+.logo-trustpilot-dark { display: inline-block; background:  url(../css/images/logo-trustpilot-dark.png) no-repeat 0 0; width: 148px; height: 80px; background-size: 100% 100%; }
+.logo-deko { display: inline-block; background:  url(../css/images/logo-deko.png) no-repeat 0 0; width: 141px; height: 32px; background-size: 100% 100%; }
+.logo-deko--small { width: 83px; height: 19px; }
+
+.logo-secure { display: inline-block; background:  url(../css/images/logo-secure.png) no-repeat 0 0; width: 152px; height: 55px; background-size: 100% 100%;   }
+.logo-verisign { display: inline-block; background:  url(../css/images/logo-verisign.png) no-repeat 0 0; width: 152px; height: 64px; background-size: 100% 100%;   }
+
+.logo-harry { display: inline-block; background:  url(../css/images/logo-harry.svg) no-repeat 0 0; width: 105px; height: 54px; background-size: 100% 100%;   }
+
+.logo-pp { display: inline-block; background:  url(../css/images/temp/logo-pp.png) no-repeat 0 0; width: 40px; height: 25px; background-size: 100% 100%;   }
+.logo-ae { display: inline-block; background:  url(../css/images/temp/logo-ae.png) no-repeat 0 0; width: 41px; height: 26px; background-size: 100% 100%;   }
+.logo-visa { display: inline-block; background:  url(../css/images/temp/logo-visa.png) no-repeat 0 0; width: 40px; height: 25px; background-size: 100% 100%;   }
+.logo-mc { display: inline-block; background:  url(../css/images/temp/logo-mc.png) no-repeat 0 0; width: 40px; height: 25px; background-size: 100% 100%;   }

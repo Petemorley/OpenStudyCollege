@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell { max-width: calc($shell-max-width + $shell-gutter * 2); padding-left: $shell-gutter; padding-right: $shell-gutter; margin: auto; }
+.shell--size1 { max-width: 1217px; }
+.shell--size2 { max-width: 1140px; }
+.shell--size3 { max-width: 1300px; }
+.shell--size3 { max-width: 755px; }
+
+.shell-fluid { max-width: none; }
+
+
+$breakpoint-mobile {
+	.shell { padding: 0 30px; }	
+}

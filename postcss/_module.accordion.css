@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+
+.accordion .accordion__head { display: none; } 
+
+/* Tablet */
+
+$breakpoint-tablet-portrait {
+	.accordion .accordion__body { border-top: 1px solid #fff; }
+
+	.accordion .accordion__head { display: block; position: relative; }
+	.accordion .accordion__head a { display: block; padding: 25px 103px; font-size: 16px; color: #fff; text-decoration: none; position: relative; z-index: 10; }
+
+	.accordion .accordion__section { position: relative; z-index: 1; margin: 0 -10px;}
+	.accordion .accordion__section + .accordion__section {  border-top: 1px solid #fff; }
+	
+	.accordion .accordion__section.has-dd .accordion__head:after { position: absolute; content: ''; width: 6px; height: 6px;  top: 30px; right: 106px; border: 1px solid #fff; z-index: 2; border-top: 0; border-left: 0;  transform: rotate(-45deg); transition: transform .4s; }
+	.accordion .accordion__section--current.has-dd .accordion__head:after {  transform: rotate(45deg); }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.accordion .accordion__head a { padding: 25px 31px; }
+	.accordion .accordion__section { margin: 0 -30px; }
+
+	.accordion .accordion__section.has-dd .accordion__head:after { right: 31px; }
+}

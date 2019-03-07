@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { min-height: 100vh; overflow: hidden; position: relative; }
+
+.wrapper--primary { padding-top: 140px; }
+
+$breakpoint-tablet-portrait {
+	.wrapper { padding-bottom: 58px; }	
+}
+
+$breakpoint-mobile {
+	.wrapper { padding-top: 60px; }
+	.wrapper--primary { padding-top: 89px; }
+}

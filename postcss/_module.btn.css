@@ -1,0 +1,148 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; vertical-align: middle; text-align: center; cursor: pointer; color: #fff; background: #ed2275; text-decoration: none; min-width: 280px; font-weight: 600; text-transform: uppercase; border-radius: 25px;  padding: 11px 5px; font-style: normal; transition: background .4s, color .4s, border-color .4s, box-shadow .4s; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+}
+
+.btn:hover { box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2); }
+
+.btn--green { background: #17b19f; }
+.btn--yellow { background: #fbc649; }
+/*.btn--green:hover { background: #0c9484; }*/
+
+.btn--size2 { min-width: 240px; }
+.btn--size3 { min-width: 305px; }
+.btn--size4 { min-width: 220px; }
+
+.btn--border { background: none; border: 1px solid #fff; padding: 10px 5px;   }
+.btn--border:hover { border-color: #c91760; }
+
+.btn--border-green { border-color: #40bdac; color: #40bdac; }
+.btn--border-green:hover { border-color: #40bdac; background: #40bdac; color: #fff; box-shadow: none; }
+
+.btn--border-pink { border-color: #ed2275; color: #ed2275; }
+.btn--border-pink:hover { border-color: #ed2275 !important; background: #ed2275 !important; color: #fff !important; box-shadow: none; }
+
+/*  Button Block  */
+.btn-block { display: block; padding-left: 0; padding-right: 0; }
+
+/*  Button Big  */
+.btn--big { background: none; border-radius: 0; padding: 3px 10px; min-width: 0; margin: -3px 0 0 -10px; }
+.btn--big i { display: inline-block; margin-left: 17px; margin-top: -4px; vertical-align: middle; animation: move 2s infinite ease-in; }
+
+.btn--big:hover { background: none; box-shadow: none; }
+
+/*  Button Hover  */
+.btn-hover { overflow: hidden; transition: .4s; }
+.btn-hover i { transition: right .4s, opacity .4s; }
+.btn-hover span { position: absolute; top: 50%; transform: translateY(-50%); left: -20px; opacity: 0; transition: left .4s, opacity .4s; }
+.btn-hover:hover { padding-right: 0; padding-left: 30px; }
+.btn-hover:hover i { right: -30px !important; /*opacity: 0;*/ }
+.btn-hover:hover span { left: 28px; opacity: 1; }
+
+$breakpoint-mobile {
+	.btn--big { padding: 3px 0px; margin: 0; }
+	.btn--big i { margin-left: 5px; }
+}
+
+/* ------------------------------------------------------------ *\
+	Button ICo
+\* ------------------------------------------------------------ */
+
+.btn-ico { position: relative; padding: 11px 36px 11px 5px; transition: .4s; overflow: hidden; }
+.btn-ico:after { content: ''; position: absolute; top: 50%; left: -20px; transform: translateY(-50%); margin-top: 0; transition: left .4s, opacity .4s; width: 0; height: 0; border-style: solid; border-width: 7.5px 0 7.5px 13px; border-color: transparent transparent transparent #ffffff; }
+.btn-ico i { position: absolute; top: 50%; right: 20px; transform: translateY(-50%); margin-top: 0; transition: right .4s, opacity .4s; }
+.btn-ico:hover { padding: 11px 5px 11px 36px; }
+.btn-ico:hover:after { left: 28px; opacity: 1; }
+.btn-ico:hover i { right: -30px; opacity: 0; }
+
+
+/* ------------------------------------------------------------ *\
+	Button Play
+\* ------------------------------------------------------------ */
+
+.btn-play { text-decoration: none; text-transform: uppercase; font-size: 20px; text-align: center; display: inline-block; }
+.btn-play i {  margin: 0 auto 33px;  }
+
+
+/* ------------------------------------------------------------ *\
+	Button Circle
+\* ------------------------------------------------------------ */
+
+
+.btn-circle { display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ff445f; position: relative; transition: background .4s; }
+.btn-circle i { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 16px; height: 16px; }
+
+.btn-circle:hover { background: #ff445f; }
+.btn-circle:hover i:after,
+.btn-circle:hover i:before { background: #fff; }
+
+
+/* ------------------------------------------------------------ *\
+	Button Search
+\* ------------------------------------------------------------ */
+
+.btn-search { position: relative; display: inline-block; width: 21px; height: 21px; }
+.btn-search:after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 15px; height: 15px; background: url(../css/images/icons/ico-cross-dark.svg) no-repeat 0 0; opacity: 0; transition: opacity .4s; margin: 0 0 0 2px;  }
+.btn-search i { transition: opacity .4s; }
+.btn-search i + i { position: absolute; top: 0; left: 0; opacity: 0; }
+.btn-search:hover i { opacity: 0; }
+.btn-search:hover i + i { opacity: 1; }
+
+.btn-search.active i { opacity: 0 !important; }
+.btn-search.active:after { opacity: 1; }
+
+/* ------------------------------------------------------------ *\
+	Button Lang
+\* ------------------------------------------------------------ */
+
+.btn-lang { position: relative; }
+.btn-lang:after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 15px; height: 15px; background: url(../css/images/icons/ico-cross-dark.svg) no-repeat 0 0; opacity: 0; transition: opacity .4s; margin: 0px 0 0 2px;  }
+.btn-lang img { transition: opacity .4s; }
+
+.btn-lang.active img { opacity: 0; }
+.btn-lang.active:after { opacity: 1; }
+
+
+/* ------------------------------------------------------------ *\
+	Button Basket
+\* ------------------------------------------------------------ */
+
+
+.btn-basket { position: relative; width: 24px; height: 20px; display: inline-block; }
+.btn-basket i { transition: opacity .4s; }
+.btn-basket i + i { position: absolute; top: 0; left: 0; opacity: 0; }
+.btn-basket:hover i { opacity: 0; }
+.btn-basket:hover i + i { opacity: 1; }
+
+@media(max-width: 767px){
+	.btn-basket:after { position: absolute; content: '';  top: 2px; right: -2px;  width: 12px;  height: 12px; background: #ff405b; border-radius: 50%; }
+}
+
+
+/* ------------------------------------------------------------ *\
+	Button Burger
+\* ------------------------------------------------------------ */
+
+.btn-burger { display: inline-block; width: 20px; height: 20px; position: relative; }
+.btn-burger span { width: 100%; height: 3px; background: #474747; position: absolute; left: 0; border-radius: 2px; transition: top .2s .25s, left .2s .25s, opacity .2s .25s, transform .2s 0s; }
+.btn-burger span:first-child { top: 0; }
+.btn-burger span:nth-child(2) { top: 8px; }
+.btn-burger span:last-child { top: 16px; }
+.btn-burger.active span { transition: background .2s, top .2s, left .2s, opacity .2s, transform .2s .25s; }
+.btn-burger.active span:first-child { top: 8px; transform: rotate(45deg); }
+.btn-burger.active span:nth-child(2) { opacity: 0; }
+.btn-burger.active span:last-child { top: 8px; transform: rotate(-45deg); }
+
+
+/* ------------------------------------------------------------ *\
+	Button Question
+\* ------------------------------------------------------------ */
+
+.btn-question { display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #17b19f; color: #fff; text-decoration: none; vertical-align: middle; text-align: center; line-height: 20px; position: relative; }
+.btn-question:hover span { opacity: 1; visibility: visible; }
+
+.btn-question span { background: #17b19f; width: 188px; padding: 10px; position: absolute; top: -10px; left: 100%; margin-left: 10px; text-transform: none !important; text-align: left !important; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s; }
+.btn-question span em { font-style: normal; }
+.btn-question span:after { content: ''; position: absolute; top: 15px; right: 100%; width: 0; height: 0; border-style: solid; border-width: 6px 10px 6px 0; border-color: transparent #17b19f transparent transparent; }

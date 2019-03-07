@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Search
+\* ------------------------------------------------------------ */
+
+.search { position: relative; }
+.search .search__field { font-family: 'Knockout', sans-serif; width: 100%; border: none; border-bottom: 1px solid #e3e3e3; font-size: 100px; color: #17b19f; padding-bottom: 20px; letter-spacing: 0.03em; text-transform: uppercase; transition: color .4s; }
+
+
+
+.search .search__field::-webkit-input-placeholder { color: #e3e3e3; }
+.search .search__field::-moz-placeholder { color: #e3e3e3; }
+.search .search__field:-ms-input-placeholder { color: #e3e3e3; }
+.search .search__field:-moz-placeholder { color: #e3e3e3; }
+
+
+.search .search__btn-clear { position: absolute; top: 50%; right: 0; transform: translateY(-50%); margin-top: -10px; background: none; border: none;transition: opacity .4s, visibility .4s; opacity: 0; visibility: hidden; }
+.search .search__btn-clear i { width: 25px; height: 25px; }
+
+.search.active .search__btn-clear { opacity: 1; visibility: visible; }
+
+$breakpoint-mobile {
+	.search .search__field { font-size: 48px; padding-bottom: 9px; }	
+	.search .search__btn-clear { margin-top: -3px; }
+	.search .search__btn-clear i { width: 19px; height: 19px; }
+}

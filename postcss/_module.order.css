@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	Orders
+\* ------------------------------------------------------------ */
+
+/*.orders { padding-top: 4px; }*/
+
+/* ------------------------------------------------------------ *\
+	Order
+\* ------------------------------------------------------------ */
+
+.order { position: relative; padding-left: 69px; font-size: 16px; line-height: 1.38; }
+.order > ul { margin-top: -4px; }
+.order span { display: block; font-weight: 600; margin-bottom: 10px; }
+.order h6 { color: #40bdac; text-transform: uppercase; font-weight: 600; }
+
+.order ul { list-style: none; }
+.order li { position: relative; }
+.order ul li + li { margin: 30px 0 0;  }
+.order ul li + .select-container { margin-top: 32px; }
+
+.order ul ul { display: flex; justify-content: space-between; }
+.order ul ul li:nth-child(1n + 1) { flex: 0 0 50%; }
+.order ul ul li:nth-child(2n + 2) { flex: 0 0 50%; }
+.order ul ul li + li { margin: 0; text-align: right; }
+
+.order .select-container { border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; padding: 37px 0; }
+
+.order ul .btn-circle { position: absolute; top: 50%; right: 0; transform: translateY(-50%); margin-top: 5px; }
+
+.order .order__btn { position: absolute; top: 0; left: 0; width: 40px; height: 100%; background: #f0f7f7; border: 1px solid #f0f7f7; border-radius: 4px; }
+.order .order__btn i { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 16px; height: 16px; }
+.order .order__btn:hover { border-color: #ff405b; }
+
+.order .order__content { background: #f0f7f7; border-radius: 4px; position: relative; margin-top: 24px; padding: 25px 31px 29px; }
+.order .order__content:after { content: ''; position: absolute; bottom: 100%; left: 20px; width: 0; height: 0; border-style: solid; border-width: 0 10px 10px 10px; border-color: transparent transparent #f0f7f7 transparent; }
+.order .order__content h6 { margin-bottom: 10px; }
+.order .order__content p { font-size: 16px; line-height: 1.38; font-weight: 400; margin-bottom: 9px; }
+.order .order__content p + h6 { margin: 0; }
+.order .order__content .btn { margin-top: 14px; font-size: 18px; }
+
+.order + .order { margin-top: 40px; }
+
+$breakpoint-tablet-portrait {
+	.order .order__content .btn { width: 100%; min-width: 0; }	
+}
+
+$breakpoint-mobile {
+	.order { padding: 0 0 80px;  }	
+	.order ul li + li { margin: 28px 0 0; }	
+	.order ul ul { display: block; }	
+	.order ul ul h6 { letter-spacing: 0.01em; padding-right: 10px; }	
+	.order ul ul li + li { text-align: left; margin: 30px 0 0;  }	
+
+	.order .order__btn { bottom: 0; top: auto;  width: 100%; height: 40px; transform: translateY(0);  }	
+	
+	.order .order__content { padding: 27px 30px 30px;  }	
+	.order .order__content:after { left: 30px; }	
+
+
+}

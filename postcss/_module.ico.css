@@ -1,0 +1,177 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+[class^="ico-"] { background-position: 0 0; background-size: 100% 100%; display: inline-block; background-repeat: no-repeat; }
+
+
+.ico-search { background-image: url(/css/images/icons/ico-search.svg); width: 21px; height: 21px; }
+.ico-search-pink { background-image: url(/css/images/icons/ico-search-pink.svg); width: 21px; height: 21px; }
+.ico-basket { background-image: url(/css/images/icons/ico-basket.svg); width: 24px; height: 20px; }
+.ico-basket-pink { background-image: url(/css/images/icons/ico-basket-pink.svg); width: 24px; height: 20px; }
+
+.ico-quote { background-image: url(/css/images/icons/ico-quote.svg); width: 70px; height: 55px; }
+.ico-quote-black { background-image: url(/css/images/icons/ico-quote-black.svg); width: 70px; height: 55px; }
+
+.ico-facebook { background-image: url(/css/images/icons/ico-facebook.svg); width: 15px; height: 15px; }
+.ico-twitter { background-image: url(/css/images/icons/ico-twitter.svg); width: 16px; height: 13px; }
+.ico-youtube { background-image: url(/css/images/icons/ico-youtube.svg); width: 16px; height: 13px; }
+
+.ico-circle-top-left { background-image: url(/css/images/temp/ico-cirlce-top.png); width: 520px; height: 520px; background-size: 100% 100%;  }
+
+.ico-angle-right { background-image: url(/css/images/temp/ico-angle-right-white.svg); width: 5px; height: 8px; }
+.ico-angle-right-white { background-image: url(/css/images/icons/ico-angle-right-white.svg); width: 5px; height: 8px; }
+
+.ico-angle-up-pink { background-image: url(/css/images/icons/ico-angle-up-pink.svg); width: 14px; height: 10px; }
+
+.ico-twitter-1 { background-image: url(/css/images/icons/ico-twitter-1.svg); width: 35px; height: 30px; }
+.ico-facebook-1 { background-image: url(/css/images/icons/ico-facebook-1.svg); width: 30px; height: 30px; }
+.ico-gplus-1 { background-image: url(/css/images/icons/ico-gplus-1.svg); width: 30px; height: 30px; }
+.ico-mail-1 { background-image: url(/css/images/icons/ico-mail-1.svg); width: 29px; height: 30px; }
+
+.ico-3-white { background-image: url(/css/images/icons/ico-3-white.svg); width: 747px; height: 738px; }
+
+.ico-cross { background-image: url(/css/images/icons/ico-cross.svg); width: 12px; height: 12px; }
+.ico-check-green { background-image: url(/css/images/icons/ico-check-green.svg); width: 16px; height: 12px; }
+.ico-check-white { background-image: url(/css/images/icons/ico-check-white.svg); width: 16px; height: 12px; }   
+
+.ico-clock { background: url(/css/images/icons/ico-clock.png) no-repeat 0 0; background-size: 100% 100%; width: 26px; height: 26px; display: inline-block; vertical-align: middle; font-size: 0; }
+.ico-tel { background: url(/css/images/icons/ico-tel.png) no-repeat 0 0; background-size: 100% 100%; width: 17px; height: 22px; min-width: 17px; min-height: 22px; display: inline-block; vertical-align: middle; font-size: 0; }
+
+.ico-message { background-image: url(/css/images/ico-message.png); width: 26px; height: 22px; }   
+
+/* ------------------------------------------------------------ *\
+	Sprite
+\* ------------------------------------------------------------ */
+
+.ico-triangle { width: 0; height: 0; border-style: solid; border-width: 7.5px 0 7.5px 13px; border-color: transparent transparent transparent #ffffff; }
+
+.ico-triangle-down { width: 0; height: 0; border-style: solid; border-width: 7px 7.5px 0 7.5px; border-color: #ffffff transparent transparent transparent; }
+
+/* ------------------------------------------------------------ *\
+	Ico X
+\* ------------------------------------------------------------ */
+
+.ico-x { display: inline-block; width: 21px; height: 21px; position: relative; }
+.ico-x:after,
+.ico-x:before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg); width: 100%; height: 2px; background: #17b19f; transition: background .4s; }
+.ico-x:before { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/*  Ico X Pink  */
+.ico-x:after,
+.ico-x:before { background: #ed2275; }
+
+/* ------------------------------------------------------------ *\
+	Ico Circle
+\* ------------------------------------------------------------ */
+
+.ico-circle { width: 450px; height: 450px; background: rgba(255, 255, 255, 0.4); border-radius: 50%; display: inline-block; }
+
+
+
+/* ------------------------------------------------------------ *\
+	
+\* ------------------------------------------------------------ */
+
+/*  Top Left  */
+.ico-triangle-top-left { position: absolute; top: 0; left: 0; width: 0; height: 0; border-style: solid; border-width: 45.2vw 45.2vw 0 0; border-color: #f869a2 transparent transparent transparent; }
+.ico-triangle-top-left--primary { border-width: 51.5vw 51.5vw 0 0; }
+.ico-triangle-top-left--size1 { border-width: 42.2vw 42.2vw 0 0; }
+
+.ico-triangle-top-left--yellow { border-color: #fbc649 transparent transparent transparent; border-width: 31.8vw 31.8vw 0 0; }
+.ico-triangle-top-left--size2 { border-width: 45.2vw 45.2vw 0 0; }
+
+.ico-triangle-top-left--pink { border-color: #40bdac transparent transparent transparent; border-width: 37.2vw 37.2vw 0 0; }
+
+.ico-triangle-top-left--size3 { border-color: #f869a3 transparent transparent transparent; border-width: 36.2vw 36.2vw 0 0; }
+
+/*  Top Right  */
+.ico-triangle-top-right { position: absolute; top: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 34vw 34vw 0; border-color: transparent #40bcab transparent transparent; }
+.ico-triangle-top-right--yellow { border-width: 0 32vw 32vw 0; border-color: transparent #fbc649 transparent transparent; }
+
+/*  Bottom left  */
+.ico-triangle-bottom-left { position: absolute; bottom: 0; left: 0; width: 0; height: 0; border-style: solid; border-width: 37.4vw 0 0 38.35vw; border-color: transparent transparent transparent #a2cacc; }
+
+.ico-triangle-bottom-left--yellow { border-color: transparent transparent transparent #fbc649; border-width: 34.4vw 0 0 34.4vw; }
+
+.ico-triangle-bottom-left--size1  { border-width: 40.4vw 0 0 41.35vw; }
+
+/*  Bottom Right  */
+.ico-triangle-bottom-right { position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 38.35vw 37.4vw; border-color: transparent transparent #40bdac transparent; }
+.ico-triangle-bottom-right--big { border-width: 0 0 48.5vw 48.5vw; }
+.ico-triangle-bottom-right--size1 { border-width: 0 0 33vw 33vw; }
+
+.ico-triangle-bottom-right--gray { border-width: 0 0 38vw 38vw; border-color: transparent transparent #a2cacc transparent; }
+
+.ico-triangle-bottom-right--size2 { border-width: 0 0 37vw 37vw; border-color: transparent transparent #fbc649 transparent; }
+
+.ico-triangle-bottom-right--size3 { border-width: 0 0 37vw 36vw; border-color: transparent transparent #40bdac transparent; }
+
+
+$breakpoint-mobile {
+	/*  Top Left  */
+	.ico-triangle-top-left--yellow { border-width: 84vw 84vw 0 0; }
+
+	/*  Top Right  */
+	.ico-triangle-top-right { border-width: 0 62vw 62vw 0; }	
+
+	/*  Bottom Let  */
+	.ico-triangle-bottom-left--yellow { border-width: 63vw 0 0 63vw; }
+
+}
+
+/* ------------------------------------------------------------ *\
+	Triangle Container
+\* ------------------------------------------------------------ */
+
+/*  Top left  */
+.ico-triangle-top-left-container { position: absolute; top: 0; left: 0; overflow: hidden; }
+.ico-triangle-top-left-container:after { content: ''; position: absolute; top: 21px; right: 6px; background: #fbc649; width: 114px; height: 7px; transform: rotate(-45deg);  }
+.ico-triangle-top-left-container:before { content: ''; position: absolute; bottom: 78px; left: -121px; background: #fff; width: 314px; height: 10px; transform: rotate(-45deg);  }
+.ico-triangle-top-left-container .ico-triangle-top-left { position: static; }
+
+.ico-triangle-top-left-container--size1:before { bottom: 32px; left: -164px; }
+
+.ico-triangle-top-left-container--size2 { overflow: visible; }
+.ico-triangle-top-left-container--size2:after { display: none; }
+.ico-triangle-top-left-container--size2:before  { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);  width: 100vw; height: 2px; background: #fbc649; margin: -28px 0 0 104px;  }
+
+.ico-triangle-top-left-container--size3:after { display: none; }
+.ico-triangle-top-left-container--size3:before  { position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg);  width: 100vw; height: 2px; background: #fbc649; margin: -28px 0 0 34px;  }
+
+
+/*  Bottom Right  */
+.ico-triangle-bottom-right-container { position: absolute; bottom: -5px; right: 0; overflow: hidden; }
+.ico-triangle-bottom-right-container i { position: static; }
+.ico-triangle-bottom-right-container:after { content: ''; position: absolute; bottom: 21px; right: -134px; background: #ef4689; width: 54vw; height: 11px; transform: rotate(-45deg);  }
+.ico-triangle-bottom-right-container:before { content: ''; position: absolute; bottom: 0; right: 6px; background: #fff; width: 346px; height: 2px; transform: rotate(-45deg);  }
+
+.ico-triangle-bottom-right-container .ico-triangle-bottom-right--size1  { position: static; border-width: 0 0 32vw 32vw; border-color: transparent transparent #a2cacc transparent; }
+
+
+.ico-triangle-bottom-right-container--size1:before { display: none; }
+.ico-triangle-bottom-right-container--size1:after { height: 6px; bottom: 2px; right: 40px; }
+.ico-triangle-bottom-right-container--size1 .ico-triangle-bottom-right { position: static;  }
+
+.ico-triangle-bottom-right-container--size2 {  }
+.ico-triangle-bottom-right-container--size2:after { bottom: 21px; right: -115px; background: #fff; width: 54vw; height: 11px; }
+.ico-triangle-bottom-right-container--size2:before { bottom: 203px; right: -96px; background: #f869a3; width: 346px; height: 2px; }
+
+
+.ico-triangle-bottom-right-container--size3:after { bottom: 21px; right: -158px; background: #fff; width: 89vw; height: 3px; }
+.ico-triangle-bottom-right-container--size3:before { bottom: 254px; right: -62px; background: #464646; width: 346px; height: 5px; }
+
+$breakpoint-mobile {
+	.ico-triangle-top-left-container--size1:after { display: none; }
+	.ico-triangle-top-left-container--size1:before { height: 6px; left: -200px;  bottom: -6px; }
+}
+
+/* ------------------------------------------------------------ *\
+	ICo Play
+\* ------------------------------------------------------------ */
+
+.ico-play { display: inline-block; width: 80px; height: 80px; border-radius: 50%; position: relative; }
+.ico-play svg { width: 100%; height: 100%; }
+
+
+/*.ico-play:after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 0; height: 0; border-style: solid; border-width: 15.5px 0 15.5px 28px; border-color: transparent transparent transparent #ffffff; margin-left: 2px; }*/

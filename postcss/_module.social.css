@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	Social
+\* ------------------------------------------------------------ */
+
+.socials a { text-decoration: none; font-size: 16px; position: relative; padding-left: 30px; }
+.socials a span { display: inline-block; position: relative; }
+.socials a span:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: #fff; transition: width .4s; }
+.socials a:hover span:after { width: 100%; }
+.socials a i { position: absolute; top: 50%; left: 0; transform: translateY(-50%); }
+.socials ul { list-style: none; }
+.socials li + li { margin-top: 7px; }
+
+$breakpoint-tablet-portrait {
+	.socials i { display: none; }
+	.socials a { padding-left: 0; }
+	.socials li + li { margin-top: 10px; }
+}
+
+
+/* ------------------------------------------------------------ *\
+	Socials Alt
+\* ------------------------------------------------------------ */
+
+.socials-alt {  }
+.socials-alt a { text-decoration: none; }
+.socials-alt h5 { margin-bottom: 34px; }
+.socials-alt ul { list-style: none; }
+.socials-alt li { display: inline-block; }
+.socials-alt li + li { margin-left: 37px; }

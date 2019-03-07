@@ -1,0 +1,173 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+[class^="list-"] { list-style: none outside none; }
+
+
+/* ------------------------------------------------------------ *\
+	List Brands
+\* ------------------------------------------------------------ */
+
+.list-brands { display: flex; flex-wrap: wrap; position: relative; }
+.list-brands:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #f0f7f7;  }
+.list-brands li { flex: 0 0 20%; max-width: 20%; }
+.list-brands li:nth-child(5n + 5) a { border-right: none;  }
+
+.list-brands a { display: block; width: 200px; height: 180px; border-right: 1px solid #d7dddd; border-bottom: 1px solid #d7dddd; position: relative; }
+.list-brands a img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+.list-brands--primary  { max-width: 800px; margin: auto; }
+.list-brands--primary li { flex: 0 0 25%; max-width: 25%; }
+.list-brands--primary li:nth-child(4n + 4) a { border-right: none; }
+.list-brands--primary li:nth-child(5n + 5) a { border-right: 1px solid #d7dddd; }
+
+.list-brands--white:after { background: #fff; }
+
+$breakpoint-tablet-portrait {
+	.list-brands a { width: 100%; height: 150px; }
+}
+
+$breakpoint-mobile {
+	.list-brands li { flex: 0 0 50%; max-width: 50%; }
+	.list-brands li:nth-child(2n + 2) a { border-right: none; }
+	.list-brands li:nth-child(2n + 3) a { border-right: 1px solid #d7dddd; }
+	.list-brands a { width: 100%; height: 181px; }
+
+	
+}
+
+
+/* ------------------------------------------------------------ *\
+	List Logos
+\* ------------------------------------------------------------ */
+
+.list-logos { display: flex; align-items: center; justify-content: flex-end; }
+.list-logos li + li { margin-left: 42px; }
+
+
+/* ------------------------------------------------------------ *\
+	List Data
+\* ------------------------------------------------------------ */
+
+.list-data li { position: relative; padding-left: 13px; }
+.list-data li:after { content: ''; position: absolute; top: 10px; left: 0; background: #ed2275; width: 3px; height: 3px; border-radius: 50%;  }
+
+
+/* ------------------------------------------------------------ *\
+	List Links
+\* ------------------------------------------------------------ */
+
+.list-links a { text-decoration: none; color: #ef4689; display: inline-block; position: relative; }
+.list-links a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: #ef4689; transition: width .4s; }
+.list-links a:hover:after { width: 100%; }
+
+$breakpoint-mobile {
+	.list-links a:after { display: none; }
+	.list-links li + li { margin-top: 22px; }
+}
+
+
+/* ------------------------------------------------------------ *\
+	List Radios
+\* ------------------------------------------------------------ */
+
+.list-radios { border: 2px solid #fff; border-radius: 25px; overflow: hidden; background: #fff; }
+.list-radios li { display: inline-block; }
+
+.list-radios--alt { background: none; overflow: visible; border: none; }
+.list-radios--alt li + li { margin-left: 34px; }
+
+$breakpoint-tablet-portrait {
+	.list-radios  { max-width: 322px; }
+	
+}
+
+$breakpoint-mobile {
+	.list-radios { max-width: 100%;  }
+	.list-radios li { width: 49%;  }
+}
+
+
+/* ------------------------------------------------------------ *\
+	List Payments
+\* ------------------------------------------------------------ */
+
+.list-payments li { display: inline-block; }
+.list-payments a { transition: opacity .4s;  }
+.list-payments a:hover { opacity: .7; }
+.list-payments li + li { margin-left: 16px; }
+
+
+/* ------------------------------------------------------------ *\
+	List Options
+\* ------------------------------------------------------------ */
+
+.list-options { font-size: 16px; margin: 0; }
+.list-options li { display: flex; justify-content: space-between; }
+.list-options li + li { margin-top: 11px; }
+.list-options strong { font-weight: 600; color: #40bdac; }
+
+.list-options--alt li { align-items: center; border-top: 1px solid #e3e3e3; padding: 14px 0 4px;  }
+.list-options--alt li:last-child { border-bottom: 1px solid #e3e3e3; padding-bottom: 15px; }
+.list-options--alt span { font-weight: 600; }
+.list-options--alt strong { text-transform: uppercase; font-size: 18px; }
+
+
+/* ------------------------------------------------------------ *\
+	List Details
+\* ------------------------------------------------------------ */
+
+.list-details { display: flex; flex-wrap: wrap; margin: 0 -10px -29px }
+.list-details li { flex: 0 0 50%; max-width: 50%; padding: 0 10px 29px; }
+.list-details a { text-decoration: none; transition: color .4s; }
+.list-details a:hover { color: #ed2275; }
+.list-details h5 { font-size: 16px; font-weight: 600; }
+.list-details h6 { color: #40bdac; font-weight: 600; text-transform: uppercase; line-height: 1.38;  }
+
+$breakpoint-mobile {
+	.list-details { display: block; }
+	.list-details li { max-width: 100%; }
+	.list-details li a { display: inline; word-wrap: break-word;  }
+	
+}
+
+
+/* ------------------------------------------------------------ *\
+	List Courses
+\* ------------------------------------------------------------ */
+
+.list-courses a { text-decoration: none; transition: color .4s; }
+.list-courses a:hover { color: #ed2275; }
+.list-courses li { border-top: 1px solid #d7dddd; padding-top: 35px !important; }
+.list-courses h3 { color: #40bdac; text-transform: uppercase; font-family: 'Knockout', sans-serif; font-weight: 500; margin-bottom: 10px; letter-spacing: 0.025em; }
+.list-courses p { font-size: 16px; line-height: 1.38; font-weight: 400;  }
+
+.list-courses li + li { margin-top: 34px; padding-top: 33px !important; }
+
+$breakpoint-mobile {
+	.list-courses h3 { letter-spacing: 0; }
+}
+
+
+/* ------------------------------------------------------------ *\
+	List Langs
+\* ------------------------------------------------------------ */
+
+.list-langs { display: flex; margin: 0 -45px; padding: 0 37px; text-align: center; }
+.list-langs img { width: 100%; }
+.list-langs h5 { color: #40bdac; font-weight: 700; text-transform: uppercase; margin: 33px 0 0;  }
+.list-langs a { text-decoration: none; }
+.list-langs li { flex: 0 0 33.33%; max-width: 33.33%; padding: 0 45px;  }
+
+$breakpoint-tablet-portrait {
+	.list-langs { margin: 0 -20px; }
+	.list-langs li  { padding: 0 20px; }
+}
+
+$breakpoint-mobile {
+	.list-langs { margin: 0; display: block; padding: 0 33px;  }
+	.list-langs li { padding: 0; max-width: 100%; }
+	.list-langs li + li { margin: 55px 0 0;  }
+	
+}

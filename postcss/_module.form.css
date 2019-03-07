@@ -1,0 +1,295 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form h5 { color: #ef4689;  text-transform: uppercase; font-weight: 600;  }
+.form label { font-size: 16px; display: block; margin-bottom: 15px; }
+
+.form .form__head { margin-bottom: 31px; }
+.form .form__actions { margin-top: 41px; }
+.form .form__row + .form__row { margin-top: 16px; }
+
+.form .btn { border: none; }
+
+
+/* ------------------------------------------------------------ *\
+	Form Prospectus
+\* ------------------------------------------------------------ */
+
+.form--prospectus { width: 820px; margin: auto; background: #fff; border-radius: 5px; overflow: hidden; }
+.form--prospectus form { display: flex;  }
+.form--prospectus .form__image { flex: 0 0 50%; max-width: 50%; position: relative; left: -1px; }
+.form--prospectus .form__inner { flex: 0 0 50%; max-width: 50%; padding: 30px 40px 20px; }
+
+$breakpoint-tablet-portrait {
+	.form--prospectus { width: 720px; }
+	.form--prospectus img { height: 100%;  }
+}
+
+$breakpoint-mobile {
+	.form--prospectus { width: 100%; }
+	.form--prospectus form { display: block; }
+	.form--prospectus .form__image { display: none; }
+	.form--prospectus .form__inner { max-width: 100%; }
+	
+}
+
+
+/* ------------------------------------------------------------ *\
+	Form Order
+\* ------------------------------------------------------------ */
+
+.form-order label { display: block; font-size: 16px; margin-bottom: 15px; }
+.form-order p { margin: 0; font-size: 14px; line-height: 1.43; font-weight: 500;  }
+.form-order p + p { margin-top: 20px; }
+.form-order p + .checkbox { margin-top: 38px; }
+
+/*.form-order .orders { margin-bottom: 37px; }*/
+.form-order .orders + .list-options { padding-top: 37px; }
+.form-order .widget-callout { margin-top: 40px; }
+
+.form-order .form__body { display: flex; margin: 0 -20px;  }
+.form-order .form__col-big--size1 { padding: 0 20px; flex: 0 0 51%; max-width: 51%; }
+.form-order .form__col-big--size2 { padding: 0 20px; flex: 0 0 49%; max-width: 49%; }
+
+.form-order .form__title { text-transform: uppercase; color: #ef4689; font-weight: 600; margin-bottom: 29px; }
+
+.form-order .form__title-alt { font-size: 16px; font-weight: 500; position: absolute; top: 0; right: 0; }
+.form-order .form__title-alt a { margin-left: 10px; position: relative; top: 3px; }
+
+.form-order .form__content { position: relative; }
+.form-order .form__content p { margin-right: -5px; }
+
+.form-order .form__actions { margin: 46px 0 0;  }
+.form-order .form__actions .btn { border: none; }
+
+.form-order .form__row { position: relative; }
+.form-order .form__row--primary { margin: 0 -10px; display: flex; }
+.form-order .form__row--primary .form__col { flex: 0 0 50%; max-width: 50%; padding: 0 10px;  }
+
+.form-order .form__row--secondary { margin: 0 -10px; display: flex; flex-wrap: wrap; padding-right: 209px; }
+.form-order .form__row--secondary > label { flex: 0 0 100%; padding-left: 10px; }
+.form-order .form__row--secondary .form__col { flex: 0 0 33.33%; max-width: 33.33%; padding: 0 10px; }
+
+.form-order .form__row--teritary label { margin-bottom: 235px; }
+
+
+.form-order .list-options + .btn { margin-top: 36px; }
+.form-order .btn + p  { margin-top: 35px; }
+
+.form-order .form__row + .form__row { margin-top: 36px; }
+.form-order .form__row--primary + .form__row--primary { margin-top: 39px; padding-top: 36px; }
+.form-order .form__row--primary + .form__row--primary:after { content: ''; position: absolute; top: 0; left: 10px; right: 10px; height: 1px; background: #e3e3e3;  }
+.form-order .form__row--primary + .form__row--secondary { margin-top: 25px; }
+
+.form-order .form__row--teritary + .form__row--primary { margin-top: 40px; padding-top: 36px; }
+.form-order .form__row--teritary + .form__row--primary:after { content: ''; position: absolute; top: 0; left: 10px; right: 10px; height: 1px; background: #e3e3e3;  }
+
+.form-order .form__group + .form__group { margin-top: 40px; padding-top: 33px; border-top: 1px solid #e3e3e3; }
+
+/*  Form Order Alt  */
+.form-order--alt h6 { font-weight: 600; margin-bottom: 37px; }
+.form-order--alt .list-radios { overflow: visible; margin: 0; margin-left: -2px;  }
+.form-order--alt .list-radios li + li { margin: 0 0 0 33px; }
+.form-order--alt .list-radios + h6 { margin-top: 37px; }
+.form-order--alt .form__body { padding-right: 60px; }
+.form-order--alt .form__actions { margin: 73px 0 0; }
+
+
+$breakpoint-tablet-portrait {
+	.form-order .form__title + .form__title-alt { position: static; margin-top: -20px; margin-bottom: 20px; }
+	.form-order .form__row--secondary { padding-right: 10px; }
+
+	/*  Form Order Alt  */
+	.form-order--alt .form__body { padding: 0; }
+}
+
+$breakpoint-mobile {
+	/*.form-order .orders { margin-bottom: 40px; }*/
+	.form-order .orders + .list-options { padding-top: 40px; }
+
+	.form-order .form__title + .form__title-alt { margin-top: -18px; margin-bottom: 33px; }
+	.form-order .list-options + .btn { width: 100%; min-width: 0; }
+	.form-order p + .checkbox { margin-top: 28px; }
+	
+	.form-order .form__row--primary { display: block; }
+	.form-order .form__row--primary .form__col { max-width: 100%; }
+	.form-order .form__row--primary .form__col + .form__col { margin-top: 34px; }
+	
+	.form-order .form__row--secondary { padding-right: 35px; }
+
+	.form-order .form__row--teritary { margin-top: 40px !important; }
+	.form-order .form__row--teritary label { display: none;  }
+	.form-order .form__row--teritary .btn { width: 100%; }
+	
+	.form-order .form__content p { margin-right: 3px; }
+
+	.form-order .form__actions { margin: 35px 0 0; }
+	.form-order .form__actions .btn { min-width: 0; width: 100%; }
+
+
+	.form-order .form__body { flex-direction: column; margin: 0; }
+	.form-order .form__body .form__col-big { max-width: 100%; padding: 0; }
+	.form-order .form__body .form__col-last { order: 1; margin-top: 41px; padding-top: 34px; border-top: 1px solid #e3e3e3; }
+
+	/*  Form Order Alt  */
+	.form-order--alt h6 { line-height: 1.5; margin-bottom: 14px; }
+	.form-order--alt .form__body { padding: 0; }
+	.form-order--alt .form__body .form__col-big  + .form__col-big { margin-top: 41px; padding-top: 33px; border-top: 1px solid #e3e3e3;  }
+	.form-order--alt .form__actions { margin: 43px 0 0; }
+	
+}
+
+
+/* ------------------------------------------------------------ *\
+	Form Conact
+\* ------------------------------------------------------------ */
+
+.form-contact { padding: 92px 0 63px; }
+.form-contact label { display: block; font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+
+.form-contact .incrementor .plus,
+.form-contact .incrementor .minus { right: 20px; }
+
+.form-contact .form__title { text-transform: uppercase; font-weight: 600; color: #ef4689; margin-bottom: 29px; }
+
+.form-contact .form__actions { margin: 36px 0 0;  }
+.form-contact .form__actions .btn { border: none; min-width: 220px; transition: .4s; }
+
+.form-contact .form__row { display: flex; margin: 0 -10px;  }
+.form-contact .form__row .form__col { flex: 0 0 50%; max-width: 50%; padding: 0 10px; }
+
+.form-contact .widget-quaternary { margin-top: 5px; }
+.form-contact .form__message { color: #ff405b; display: none; }
+.form-contact .list-radios { padding-top: 11px; }
+
+.form-contact .form__row--primary { display: block; margin: 0; }
+.form-contact .form__row--primary .form__col  { max-width: 100%; padding: 0; }
+
+.form-contact .form__row + .form__row { margin-top: 36px; }
+.form-contact .form__row-inner + .form__row-inner { margin-top: 38px; }
+.form-contact .form__group + .form__group { border-top: 1px solid #e3e3e3; margin-top: 41px; padding-top: 32px; }
+
+.form-contact .error-container .form__message { display: inline-block; }
+
+.form-contact .form-invalid .form__actions .btn { pointer-events: none; opacity: .5; }
+.form-contact .not-valid .form__actions .btn { pointer-events: none; opacity: .5; }
+
+.form-contact .form-valid .form__actions .btn { pointer-events: auto; opacity: 1; }
+
+
+/*  Form Contact Primary  */
+.form-contact--primary .form__group + .form__group  {  }
+
+$breakpoint-mobile {
+	.form-contact { padding: 32px 0 45px; }	
+	.form-contact .form__row { display: block; }	
+	.form-contact .form__row .form__col { max-width: 100%; }	
+	.form-contact .form__row .form__col + .form__col { margin-top: 38px; }	
+	
+	.form-contact .form__actions { margin-top: 34px; }	
+	.form-contact .form__actions .btn { min-width: 0; width: 100%; }	
+	
+	.form-contact .form__col .form__row { display: flex; }	
+	.form-contact .form__col .form__row .form__col { max-width: 50%; }	
+	.form-contact .form__col .form__row .form__col + .form__col { margin: 0; }	
+	
+	.form-contact .form__foot { margin-top: 42px; }	
+	
+	.form-contact .error-container .form__message { display: block; }
+	.form-contact .list-radios { padding-top: 11px; }
+	.form-contact .list-radios li { width: initial; }
+	
+	.form-contact--primary { border-top: 1px solid #e3e3e3; margin-top: 34px; padding-top: 34px !important; }	
+
+}
+
+
+/* ------------------------------------------------------------ *\
+	Form Alt
+\* ------------------------------------------------------------ */
+
+.form-alt { position: relative; }
+
+.form-alt label { display: block; color: #464646; font-weight: 600; font-size: 16px; margin-bottom: 14px; }
+
+.form-alt .form__logo { position: absolute; top: -51px; left: 0; }
+
+.form-alt .form__field { color: #464646; background: none; }
+
+.form-alt .form__actions { margin-top: 41px; }
+.form-alt .form__actions p { font-size: 14px; line-height: 1.43; color: #464646; }
+.form-alt .form__actions .btn { border: none; width: 100%; min-width: 0; }
+.form-alt .form__actions .btn + p { margin: 38px 0 0;  }
+
+.form-alt .form__actions--alt { margin: 12px 0 0;  }
+.form-alt .form__actions--alt p { text-transform: uppercase; font-weight: 600; font-size: 16px; line-height: 1.5; margin-bottom: 34px; }
+
+.form-alt .form__row-inner { display: flex; margin: 0 -10px; }
+.form-alt .form__row-inner .form__col { flex: 0 0 50%; max-width: 50%; padding: 0 10px;  }
+
+.form-alt .form__row + .form__row { margin-top: 17px; }
+
+/*  Form Alt Primary  */
+.form-alt--primary { padding-top: 33px; }
+.form-alt--primary label { text-transform: uppercase; }
+
+/*  Form Alt Secondary  */
+.form-alt--secondary {  }
+.form-alt--secondary .form__row { display: flex; margin: 0 -20px; }
+.form-alt--secondary .form__col { flex: 0 0 50%; max-width: 50%; padding: 0 20px; }
+.form-alt--secondary .form__actions { text-align: center; }
+.form-alt--secondary .btn { max-width: 320px; }
+
+/*  Form Alt Teritary  */
+.form-alt--teritary .form__row + .form__row { margin-top: 33px; }
+
+$breakpoint-mobile {
+	.form-alt .form__logo { top: -55px; }	
+	.form-alt .form__actions--alt { margin: 15px 0 0; }
+
+	.form-alt--primary { padding-top: 29px; }
+
+	/*  Form Alt Secondary  */
+	.form-alt--secondary .form__row { display: block; margin: 0 -20px; }
+	.form-alt--secondary .form__col { max-width: 100%; padding: 0 20px; }
+	.form-alt--secondary .form__col + .form__col { margin-top: 17px; }
+
+}
+
+
+/* ------------------------------------------------------------ *\
+	Form Download
+\* ------------------------------------------------------------ */
+
+.form-download { position: relative; }
+.form-download label { display: none; }
+.form-download .form__body { padding-right: 210px; }
+.form-download .form__field { height: 35px; }
+.form-download .form__row { display: flex; margin: 0 -10px; }
+.form-download .form__col { flex:  0 0 33.33%; max-width: 33.33%; padding: 0 10px; }
+
+.form-download .form__btn { position: absolute; bottom: 0; right: 0; min-width: 190px; border: none; padding: 7px 5px; }
+.form-download .form__btn span { display: none; }
+
+.form-download--size1 .form__col { flex: 0 0 25%; max-width: 25%; }
+
+
+$breakpoint-mobile {
+	.form-download label { display: block; margin-bottom: 15px; font-size: 16px; font-weight: 600; }	
+	.form-download .form__field { height: 45px; }	
+	.form-download .form__body { padding: 0; }	
+	.form-download .form__col { max-width: 100%; }	
+	.form-download .form__col + .form__col { margin: 35px 0 0;  }	
+	.form-download .form__row { display: block; }	
+	.form-download .form__btn { position: static; min-width: 0; width: 100%; padding: 11px 5px; }	
+	.form-download .form__btn span { display: inline; }	
+	.form-download .form__actions { margin: 40px 0 5px;  }	
+}
+
+@media(max-width: 374px){
+	.form-download label { margin-bottom: 5px; }	
+	.form-download .form__col + .form__col { margin: 15px 0 0; }	
+	.form-download .form__actions { margin: 30px 0 0px; }	
+	
+}
