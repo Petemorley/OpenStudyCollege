@@ -443,10 +443,22 @@
 		//JS Toggle
 		jQuery('.js-toggle').on('click', function(e) {
 			e.preventDefault();
-
+            jQuery('.popup-toggle').removeClass("visible-popup")
 			jQuery( jQuery(this).data('target') ).toggleClass('visible-popup')
-		})
+        });
+        
+        jQuery('.btn-close').on('click', function(e) {
+			e.preventDefault();
+            jQuery('.popup-toggle').removeClass("visible-popup")
+        });
+        
+        jQuery('.menuoverlay').on('click', function(e) {
+			e.preventDefault();
+            jQuery('.popup-toggle').removeClass("visible-popup")
+        });
+        
 
+        
 		//Close Popup By pressing Esc
 		jQuerywin.on('keydown', function(e) {
 
@@ -753,6 +765,7 @@
 		}
 
 
+
 		jQuery('.slider-steps .slider__slide').each(function() {
 			var jQuerythis = jQuery(this)
 
@@ -921,5 +934,6 @@
 				lastScrollTop = scrolledY;
 			});
 	})
+      
 
 })(jQuery, window, document);
