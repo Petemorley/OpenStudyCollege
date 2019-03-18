@@ -803,7 +803,7 @@ p.textblind.start-animation .blind small { animation: dropin 0.7s .6s cubic-bezi
 .masthead .shell { max-width: 1100px; }
 .masthead .shell--size3 { max-width: 1300px; }
 .masthead .header__call { display: inline-block; float: left; padding-left: 40px; font-size: 16px; }
-.masthead .header__call span { color: #ed2275; }
+.masthead .header__call span { color: #464646; font-weight: bold; }
 .masthead .logo { vertical-align: middle; position: relative; top: 2px; }
 .masthead .nav { display: inline-block; vertical-align: middle; }
 .masthead .header__links { list-style: none; display: block; vertical-align: middle; margin: 15px 0 15px 0; width: 50%; font-size: 16px;  }
