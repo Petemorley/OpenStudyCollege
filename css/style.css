@@ -803,7 +803,7 @@ p.textblind.start-animation .blind small { animation: dropin 0.7s .6s cubic-bezi
 .masthead .shell { max-width: 1100px; }
 .masthead .shell--size3 { max-width: 1300px; }
 .masthead .header__call { display: inline-block; float: left; padding-left: 40px; font-size: 16px; }
-.masthead .header__call span { color: #464646; font-weight: bold; }
+.masthead .header__call span { color: #ed2275; }
 .masthead .logo { vertical-align: middle; position: relative; top: 2px; }
 .masthead .nav { display: inline-block; vertical-align: middle; }
 .masthead .header__links { list-style: none; display: block; vertical-align: middle; margin: 15px 0 15px 0; width: 50%; font-size: 16px;  }
@@ -2373,7 +2373,7 @@ margin-bottom: -4px;
 .popup { position: fixed; top: 0px; left: 0; width: 100%; height: 100vh; z-index: 102; padding-top: 54px; opacity: 0; visibility: hidden; transition: opacity .4s, visibility .4s; }
 #popup-menu-courses { top: auto; }
 #popup-menu-qualifications { top: auto; }
-.popup .btn-close { position: absolute; top: 78px; right: 20px; transition: opacity .4s; z-index: 10; opacity: 0; transition: opacity .4s .7s; z-index: 99; }
+.popup .btn-close { position: absolute; top: 108px; right: 20px; transition: opacity .4s; z-index: 10; opacity: 0; transition: opacity .4s .7s; z-index: 99; }
 .popup .btn-close:hover { opacity: .7; }
 .popup .bg-animation { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%) rotate(45deg); transform: translate(-50%, -50%) rotate(45deg);  width: 200%; height: 200vh; width: 2900px; height: 2100px; z-index: 2; }
 .popup .bg-animation:after,
@@ -2402,7 +2402,7 @@ margin-bottom: -4px;
 .popup .btn-close .ico-x:before { background: #fff; }
 .popup-container { position: fixed; top: 0; left: 0; width: 100%; height: 100vh;  background: #fff; z-index: 100; }
 /*  Popup Mobile  */
-.popup--menu .popup__inner { min-height: auto; padding: 90px 0 70px 0; position: relative; z-index: 3; opacity: 0; transition: opacity .6s; }
+.popup--menu .popup__inner { min-height: auto; padding: 110px 0 70px 0; position: relative; z-index: 3; opacity: 0; transition: opacity .6s; }
 .popup.visible-popup .popup__inner { opacity: 1; transition: opacity .4s 1s; }
 .popup--menu .mCustomScrollBox .mCSB_container { margin: 0 auto; max-width: 1080px; }
 .popup--menu .mCustomScrollBox .mCSB_scrollTools { opacity: 0 !important; }
@@ -2455,7 +2455,7 @@ margin-bottom: -4px;
 .popup-search .bg-animation-container { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; }
 .popup-search .bg-animation:after { background: #fff; }
 .popup-search .bg-animation:before { background: #fff; }
-.popup-search .mCustomScrollBox .mCSB_container { margin: 5vh auto; max-width: 1100px; height: 90vh; }
+.popup-search .mCustomScrollBox .mCSB_container { margin: 5vh auto; max-width: 1100px; height: auto; }
 .popup-search .mCustomScrollBox .mCSB_scrollTools { opacity: 0 !important; }
 .popup-search.visible-popup {  transition: background .4s .9s;  }
 .visible-popup .menuoverlay { position: fixed; top: 0; transition: background .4s; bottom: 0; left: 0; right: 0; background-color: #494949; opacity: .8; z-index: 1; }
@@ -2469,8 +2469,7 @@ margin-bottom: -4px;
 
 .popup-search .shell { max-width: inherit; }
 .popup-search .section-search .service { border-radius: 0; border: none; margin-left: -10px; margin-right: -10px; background-color: #fff; }
-.popup-search .section-search .service:hover { background-color: #f4f4f4; }
-.popup-search .section-search .service:hover a { color: #ed2275; }
+.popup-search .section-search .service:focus { background-color: #f4f4f4; }
 .popup-search .section-search .service a { min-height: inherit; }
 .popup-search .section-search .service + .service { margin-top: 0; }
 .popup-search .section-search .service h5 { margin-bottom: 5px; }
@@ -2483,21 +2482,24 @@ margin-bottom: -4px;
 
 @media (max-width: 1023px) {
     
+    .popup-search { }
 	.popup-search .header__inner { padding-top: 0px;  }	
 	.popup-search .popup__inner { width: 100vw; }	
     .popup-search .shell {  }
-    .popup-search .mCustomScrollBox .mCSB_container { margin: 0px; height: 100vh; }
+    .popup-search .mCustomScrollBox .mCSB_container { margin: 0px;}
     .popup-search .popup__inner{ width: auto; }
-    .popup-search .mCustomScrollBox { overflow: auto; }
+    .popup-search .mCustomScrollBox { overflow: auto; height: auto;}
     .popup-search .section-search .btn-close { top:15px; }
     .popup-search { top: 0; }
     .popup-search .search-controls { display: none; }
+    
+    .popup-search .menuoverlay { position: fixed; top: 0; transition: background .4s; bottom: 0; left: 0; right: 0; background-color: #fff; opacity: 1; z-index: 1;}
 }
 @media (max-width: 767px) {
 	.popup-search .header { display: none; }	
-    .popup-search .mCustomScrollBox .mCSB_container { margin: 0px; height: 100vh; }
+    .popup-search .mCustomScrollBox .mCSB_container { margin: 0px; height: auto; }
     .search-intro { visibility: hidden; }
-    #popup-search { top: 0; }
+    #popup-search { top: 0; bottom: 0; left: 0; position: fixed; }
     .popup-search .shell { padding: 0; }
     .popup-search .search .search__field {font-size: 32px; }
     .popup-search .section-search .btn-close { top: 5px; }
@@ -2816,18 +2818,20 @@ results .results__body .service  .service__body { padding: 0; }
 /* ------------------------------------------------------------ *\
 	Section Search
 \* ------------------------------------------------------------ */
-.section-search { padding: 40px 0 80px; min-height: calc(100vh - 266px); }
+.section-search { padding: 40px 0 80px; }
 .section-search .search { margin-bottom: 32px; }
 
 .section-search .search .service { border: none; border-radius: 0; }
 .section-search .search { padding: 0px 30px 0px 30px; }
 .section-search .results__title { text-transform: uppercase; font-weight: 600; padding: 0px 30px 0px 30px; margin: 0; color: #464646; }
-.section-search .results { height: 55vh; overflow-y: scroll; margin-bottom: 3vh; overflow-y: scroll; overflow-x: hidden; }
+.section-search .results { height: 55vh; overflow-y: scroll; overflow-y: auto; overflow-x: hidden; }
 .section-search .search { }
 .section-search .search { }
 
-@media (max-width: 767px) {
-	.section-search { padding: 50px 0 80px; }
+@media (max-width: 1023px) {
+	.section-search { }
+    .section-search .results { height: 100%; overflow-y: visible; }
+    .section-search .results { margin-bottom: 0;}
 }
 /* ------------------------------------------------------------ *\
 	Section Senary
