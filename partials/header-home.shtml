@@ -1614,7 +1614,7 @@
 							<form action="?" method="get">
 								<label for="q" class="hidden">Search</label>
 								
-								<input type="search" class="search__field" name="q" id="q" placeholder="Search for courses" autofocus="autofocus" />
+								<input type="search" class="search__field" name="q" id="q" placeholder="Search for courses" autofocus />
 								
 								<button type="reset" class="search__btn-clear">
 									<i class="ico-cross"></i>
@@ -1745,60 +1745,34 @@
         
        
 
-		<div class="popup popup-lang" id="popup-lang">
-            
-            <a href="#" class="btn-close js-toggle" data-target="#popup-lang">
-				<i class="ico-cross"></i>
-			</a>
-            
-			<div class="popup__inner">
-				<div class="shell">
-					<div class="section-lang">
-                        
-                            <h5>Please select your language</h5>
-                        
-						<ul class="list-langs">
-                            <li>
-								<a href="#">
-									<img src="css/images/temp/uk.png" alt="" />
-								</a>
+<div class="popup popup-lang" id="popup-lang">
+   <a href="#" class="btn-close js-toggle" data-target="#popup-lang">
+       <i class="ico-cross"></i>
+   </a>
+   <div class="popup__inner">
+       <div class="shell">
+           <div class="section-lang">
+               <h5>Please select your currency</h5>
+               <form action="{{ route('handleLocationForm') }}" method="POST">
+                   {{ csrf_field() }}
+                   <input type="button" onclick="this.form.submit()" style="background-image:url('https://www.openstudycollege.com/ecommerce/osc/assets/css/images/temp/GBP.png');" value="GBP" @if (Session::get('geodata.country') == 'United Kingdom') {{'selected'}} @endif value="GBP" />
+                   
+                   <input type="button" onclick="this.form.submit()" style="background-image:url('https://www.openstudycollege.com/ecommerce/osc/assets/css/images/temp/EURO.png');" value="EUR" @if (Session::get('geodata.country') == 'Europe') {{'selected'}} @endif value="GBP" />
+                   
+                   {{--<input type="button" style="background-image:url('https://www.openstudycollege.com/ecommerce/osc/assets/css/images/temp/EUR.png');" value="EUR-RI" @if (Session::get('geodata.country') == 'Republic of Ireland') {{'selected'}} @endif />--}}
+                   
+               </form>
+           
 
-								<h5>
-									<a href="#">United kingdom</a>
-								</h5>
-							</li>
+           </div>
+       </div>
+       <div class="bg-animation-container">
+           <span class="bg-animation"></span>
+       </div><!-- /.bg-animation-container -->
 
-							<li>
-								<a href="#">
-									<img src="css/images/temp/ir.png" alt="" />
-								</a>
-
-								<h5>
-									<a href="#">Republic Of Ireland</a>
-								</h5>
-							</li>
-
-							<li>
-								<a href="#">
-									<img src="css/images/temp/UAE.png" alt="" />
-								</a>
-
-								<h5>
-									<a href="#">U.a.e.</a>
-								</h5>
-							</li>
-						</ul><!-- /.list-langs -->
-					</div><!-- /.section-lang -->
-					
-				</div><!-- /.shell -->
-					
-				<div class="bg-animation-container">
-					<span class="bg-animation"></span>
-				</div><!-- /.bg-animation-container -->
-                
-                <span class="js-toggle menuoverlay" data-target="#popup-lang"></span>
-			</div><!-- /.popup__inner -->
-		</div><!-- /.popup -->
+       <span class="js-toggle menuoverlay" data-target="#popup-lang"></span>
+   </div>
+</div><!-- /.popup -->
 
 
 
